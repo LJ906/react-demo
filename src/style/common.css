@@ -1,0 +1,23 @@
+/** 常用色值 **/
+/** 常用字体大小 **/
+#root {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container .nav-left {
+  width: 200px;
+  height: 100%;
+  background-color: #001529;
+  color: #fff;
+}
+.container .my-header {
+  height: 76px;
+  background-color: #fff;
+}
+.container .content {
+  padding: 20px;
+}

@@ -351,6 +351,8 @@ module.exports = function(webpackEnv) {
                       },
                     },
                   ],
+                  // babel plugin 设置 antd 按需引入，即引入组件式同时会引入对应的css，无需全局引入所有的样式
+                  [  "import",{libraryName: "antd", style: 'css'}] // antd按需加载
                 ],
                 // This is a feature of `babel-loader` for webpack (not Babel itself).
                 // It enables caching results in ./node_modules/.cache/babel-loader/

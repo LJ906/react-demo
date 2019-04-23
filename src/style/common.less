@@ -1,0 +1,35 @@
+
+@import './default.less';
+
+
+@nav-left-bgcolor: #001529;
+@nav-left-width: 200px;
+@nav-left-color: #fff;
+
+@header-bgcolor: #fff;
+@header-height: 44px;
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    .nav-left {
+        width: @nav-left-width;
+        height: 100%;
+        background-color: @nav-left-bgcolor;
+        color: @nav-left-color;
+    }
+    
+    .my-header {
+        height: 76px;
+        background-color: @header-bgcolor;
+    }
+    .content {
+        padding: 20px;
+    }
+    
+}
+

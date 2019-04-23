@@ -1,0 +1,21 @@
+.my-header-wrp .my-header-top {
+  height: 50px;
+  line-height: 50px;
+}
+.my-header-wrp .my-header-top .log-out {
+  margin-left: 30px;
+  padding: 5px;
+}
+.my-header-wrp .my-header-top .avatar-img {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+.my-header-wrp .bread-crumb {
+  height: 26px;
+  line-height: 26px;
+}
+.my-header-wrp .hr {
+  padding: 0;
+  margin: 0;
+}
