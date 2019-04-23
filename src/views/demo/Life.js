@@ -1,5 +1,7 @@
 import React from 'react'
+import { Button } from 'antd';
 import Children from "./chidren";
+import './index.less'
 export default class Life extends React.Component {
     constructor () {
         super();
@@ -30,8 +32,9 @@ export default class Life extends React.Component {
     render () {
         // 为啥render里的this 指的是组件本身     
         return (
-        <div>
-            <div>react 生命周期介绍</div>
+        <div className="life-wrp">
+            <div className="life">react 生命周期介绍</div>
+            <Button type="primary">Button</Button>
             <button onClick={this.handleClick.bind(this)}>点击一下</button>
             <button onClick={this.handleAdd}>点击一下add</button>
             <p>{this.state.count}</p>
