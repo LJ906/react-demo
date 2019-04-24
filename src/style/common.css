@@ -15,9 +15,14 @@
   color: #fff;
 }
 .container .my-header {
-  height: 76px;
+  height: 84px;
+  padding: 0 20px;
   background-color: #fff;
 }
 .container .content {
-  padding: 20px;
+  border: 20px solid #f0f2f5;
+  background-color: #fff;
+}
+.container .my-footer {
+  padding: 0 20px;
 }

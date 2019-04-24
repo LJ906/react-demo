@@ -1,6 +1,11 @@
+/** 常用色值 **/
+/** 常用字体大小 **/
+.my-header-wrp {
+  color: #837c7cf5;
+}
 .my-header-wrp .my-header-top {
-  height: 50px;
-  line-height: 50px;
+  height: 54px;
+  line-height: 54px;
 }
 .my-header-wrp .my-header-top .log-out {
   margin-left: 30px;
@@ -9,13 +14,22 @@
 .my-header-wrp .my-header-top .avatar-img {
   width: 30px;
   height: 30px;
-  vertical-align: top;
+  vertical-align: middle;
 }
-.my-header-wrp .bread-crumb {
-  height: 26px;
-  line-height: 26px;
+.my-header-wrp .bread-wrp {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  border-top: 1px solid #f9c700;
 }
-.my-header-wrp .hr {
-  padding: 0;
-  margin: 0;
+.my-header-wrp .bread-wrp .bread-crumb {
+  height: 30px;
+  line-height: 30px;
+}
+.my-header-wrp .bread-wrp .weather img {
+  height: 18px;
+  vertical-align: middle;
+}
+.my-header-wrp .bread-wrp .weather span {
+  margin-left: 5px;
 }

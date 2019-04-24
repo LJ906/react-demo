@@ -1,7 +1,9 @@
+@import '../../style/default.less';
 .my-header-wrp { 
+    color: #837c7cf5;
     .my-header-top  {
-        height: 50px;
-        line-height: 50px;
+        height: 54px;
+        line-height: 54px;
         .log-out {
             margin-left: 30px;
             padding: 5px;
@@ -9,15 +11,27 @@
         .avatar-img {
             width: 30px;
             height: 30px;
-            vertical-align: top;
+            vertical-align: middle;
+        }        
+    }
+    .bread-wrp  {
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        border-top: 1px solid @colorA;
+        .bread-crumb {
+            height: 30px;
+            line-height: 30px;
+        }
+        .weather {
+            img {
+                height: 18px;
+                vertical-align: middle; 
+            }
+            span {
+                margin-left: 5px;
+            }
         }
     }
-    .bread-crumb  {
-        height: 26px;
-        line-height: 26px;
-    }
-    .hr  {
-        padding: 0;
-        margin: 0; 
-    }
-} 
+     
+}

@@ -3,10 +3,11 @@ import React from 'react';
 import './index.less';
 // 引入菜单数据
 import MenuConfig from '../../config/menuConfig';
+import {NavLink} from 'react-router-dom';
+// 引入antd 菜单组件
 import { Menu, Icon } from 'antd';
-
 const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+
 
 export default class NavLeft extends React.Component {
     state = {
@@ -38,7 +39,9 @@ export default class NavLeft extends React.Component {
                     </SubMenu>
                 )
              }
-             return (<Menu.Item key={item.key} title={item.title}>{item.title}</Menu.Item>) 
+             return (<Menu.Item key={item.key} title={item.title}>
+                <NavLink to={'/home' + item.key}>{item.title}</NavLink>
+             </Menu.Item>) 
         })
     }
 

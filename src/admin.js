@@ -5,8 +5,6 @@ import './style/common.css';
 import MyHeader from './components/Header'
 import NavLeft from './components/NavLeft';
 import MyFooter from './components/Footer';
-
-// import { Row, Col } from "antd";
 import { Layout } from 'antd';
 const {
   Header, Footer, Sider, Content,
@@ -25,28 +23,13 @@ export default class Admin extends React.Component {
                         <MyHeader/>
                     </Header>
                     <Content className="content">
-                        content
+                        {this.props.children}
                     </Content>
                     <Footer className="my-footer">
                         <MyFooter/>
                     </Footer>
                 </Layout>
-            </Layout>
-
-            // <Row className="container">
-            //     <Col span={3} className="nav-left">
-            //         <NavLeft/>
-            //     </Col>
-                
-            //     <Col span={21} className="main">
-            //         <Header/>
-            //         <Row className="content">
-            //             content
-            //         </Row>
-            //         <Footer/>
-                
-            //     </Col>
-            // </Row>
+            </Layout>            
         )
     }
 }
