@@ -20,8 +20,8 @@
   background-color: #fff;
 }
 .container .content {
-  border: 20px solid #f0f2f5;
-  background-color: #fff;
+  padding: 20px;
+  background-color: #f0f2f5;
 }
 .container .my-footer {
   padding: 0 20px;

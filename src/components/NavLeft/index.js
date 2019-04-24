@@ -12,7 +12,7 @@ const SubMenu = Menu.SubMenu;
 export default class NavLeft extends React.Component {
     state = {
         menuTreeNode: [],
-        n: 0
+        
     }
     // 加载前执行
     componentWillMount () {
@@ -40,7 +40,7 @@ export default class NavLeft extends React.Component {
                 )
              }
              return (<Menu.Item key={item.key} title={item.title}>
-                <NavLink to={'/home' + item.key}>{item.title}</NavLink>
+                <NavLink to={ item.key.includes('/home')? item.key : '/home'+ item.key}>{item.title}</NavLink>
              </Menu.Item>) 
         })
     }
@@ -53,7 +53,13 @@ export default class NavLeft extends React.Component {
                     React
                 </div>           
 
-                <Menu theme="dark" mode="vertical" onClick={this.handleClick} >
+                <Menu 
+                    theme="dark" 
+                    mode="vertical" 
+                    onClick={this.handleClick} 
+                    defaultSelectedKeys={['/ui']}
+                    defaultOpenKeys={['/ui']}
+                    >
                     {this.state.menuTreeNode}
                 </Menu>     
             </div>

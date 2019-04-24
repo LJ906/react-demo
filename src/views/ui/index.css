@@ -1,0 +1,9 @@
+.button-wrp .ant-card {
+  margin-bottom: 10px;
+}
+.button-wrp .ant-btn {
+  margin-right: 8px;
+}
+.button-wrp .ant-btn-group .ant-btn {
+  margin-right: 0;
+}

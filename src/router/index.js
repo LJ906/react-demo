@@ -13,10 +13,12 @@ export default class IRouter extends React.Component {
             // 这个节点是必须的 里面嵌套根节点
             <Router>                   
                 <App>                                     
-                    <Route exact={true} path="/home" render={()=> 
-                        <Admin>                            
-                            <Route path="/home/ui/buttons" component={MyButton}></Route>
-                            <Route component={NoMatch}></Route> 
+                    <Route path="/home" render={()=> 
+                        <Admin>  
+                            <Switch>
+                                <Route path="/home/ui/buttons" component={MyButton}></Route>
+                                <Route component={NoMatch}></Route> 
+                            </Switch>
                         </Admin> 
                     }></Route>
                     <Route path="/login" component={Login}></Route>
