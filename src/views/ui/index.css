@@ -1,9 +1,12 @@
-.button-wrp .ant-card {
+.button-wrp .ant-card,
+.modals-wrp .ant-card {
   margin-bottom: 10px;
 }
-.button-wrp .ant-btn {
+.button-wrp .ant-btn,
+.modals-wrp .ant-btn {
   margin-right: 8px;
 }
-.button-wrp .ant-btn-group .ant-btn {
+.button-wrp .ant-btn-group .ant-btn,
+.modals-wrp .ant-btn-group .ant-btn {
   margin-right: 0;
 }

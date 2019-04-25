@@ -1,5 +1,5 @@
 import React from 'react';
-import './../index.less'
+import './index.less'
 import { Card, Button, Radio  } from 'antd';
 const { Meta } = Card;
 const ButtonGroup = Button.Group;
