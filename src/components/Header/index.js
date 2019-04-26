@@ -59,14 +59,14 @@ export default class Header extends React.Component {
                     <Col span={24} align="right">
                         <span>您好，{userName}</span>
                         <img className="avatar-img" src={avatar} alt=""/>
-                        <a href="#" className="log-out"> 退出</a>
+                        <a href="https://www.baidu.com" className="log-out"> 退出</a>
                     </Col>
                 </Row>
                  
                 <Row className=" bread-wrp">
                     <Col span={12}>
                         <Breadcrumb separator=">" className="bread-crumb">
-                            <Breadcrumb.Item><a href="">首页</a></Breadcrumb.Item>
+                            <Breadcrumb.Item><a href="https://www.baidu.com">首页</a></Breadcrumb.Item>
                         </Breadcrumb>
                     </Col>
                     <Col span={6} align="right">{this.state.sysTime}</Col> 

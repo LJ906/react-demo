@@ -13,7 +13,7 @@ export default class Axios {
             }, (err, response)=> {
                 console.log('err', err);
                 console.log('response', response);
-                 if (response.status === "success") {
+                 if (response.status && response.status === "success") {
                      resolve(response)
                  } else {
                     reject(response.message)

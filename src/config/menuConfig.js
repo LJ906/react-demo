@@ -52,6 +52,10 @@ const menuList = [
             },
             {
                 title: '注册',
+                key: '/form/regeister',
+            },
+            {
+                title: '注册2',
                 key: '/form/reg',
             }
         ]

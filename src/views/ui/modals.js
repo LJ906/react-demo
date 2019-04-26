@@ -1,10 +1,6 @@
 import React from 'react';
 import './index.less'
 import { Card, Modal, Button, message } from 'antd';
-const { Meta } = Card;
-const ButtonGroup = Button.Group;
- 
-
 
 export default class Modals extends React.Component {
     state = {

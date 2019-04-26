@@ -57,8 +57,8 @@ export default class NavLeft extends React.Component {
                     theme="dark" 
                     mode="vertical" 
                     onClick={this.handleClick} 
-                    defaultSelectedKeys={['/ui']}
-                    defaultOpenKeys={['/ui']}
+                    // defaultSelectedKeys={['/ui']}
+                    // defaultOpenKeys={['/ui']}
                     >
                     {this.state.menuTreeNode}
                 </Menu>     

@@ -23,6 +23,10 @@
   padding: 20px;
   background-color: #f0f2f5;
 }
+.container .content .ant-btn {
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
 .container .my-footer {
   padding: 0 20px;
 }
